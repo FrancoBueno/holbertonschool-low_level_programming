@@ -8,7 +8,7 @@
  *
  *Return: Always 0 (success)
  *
- *Asign the last digit to the execute 
+ *Asign the last digit to the execute
  */
 int main(void)
 {
