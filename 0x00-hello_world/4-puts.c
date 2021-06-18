@@ -1,13 +1,5 @@
-#!/bin/bash
-#inside <stdio.h>
-/**
-* main - that prints exactly
-*        "Programming is like building a multilingual puzzle
-*        followed by a new line.
-*
-* Return: Always 0 (Success)
-*/
-int main(void)
+#include <stdio.h>
 {
-puts("\"Programming is like building a multilingual puzzle");
-return (0);
+    puts "/"Programming is like building a multilingual puzzle"
+
+return (0)
