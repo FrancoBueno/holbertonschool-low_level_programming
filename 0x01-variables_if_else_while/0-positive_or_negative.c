@@ -5,8 +5,8 @@
 /**
  * main - Entry point
  *
- * Return Always success (0)
- *
+ * Return: Always success (0)
+ * Positive or negative number program
  */
 int main(void)
 {
