@@ -5,7 +5,7 @@
  *
  *Return : always (0);
  *
- *print the alphabet from to a to z
+ *Print the alphabet from to a to z
  */
 int main(void)
 {
