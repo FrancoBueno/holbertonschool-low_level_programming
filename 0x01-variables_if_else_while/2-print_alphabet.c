@@ -1,19 +1,30 @@
+#include <stdlib.h>
+#include <time.h>
 #include <stdio.h>
+
 /**
-*
 *main - Entry point
+*this fuction print the alphabet a...z, A...Z
 *
-*Return : always (0);
-*
-*Print the alphabet from to a to z
+*Return: Always 0 (success)
+*Description: This program prints all letters from a-z in lower case
 */
 int main(void)
 {
-char c;
+char start = 'z';
+char aux;
+for (aux = 'a'; aux <= start; aux++)
+char letter = 'a';
 
-for (c = 'a'; c <= 'z'; ++c)
-putchar(c);
+while (letter <= 'z')
+{
+putchar(aux);
+putchar(letter);
+letter++;
+}
 putchar('\n');
-
+{
+putchar(aux);
+}
 return (0);
 }
