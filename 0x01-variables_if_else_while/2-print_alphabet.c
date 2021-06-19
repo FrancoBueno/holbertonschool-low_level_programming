@@ -1,12 +1,12 @@
 #include <stdio.h>
 /**
- *
- *main - Entry point
- *
- *Return : always (0);
- *
- *Print the alphabet from to a to z
- */
+*
+*main - Entry point
+*
+*Return : always (0);
+*
+*Print the alphabet from to a to z
+*/
 int main(void)
 {
 char c;
