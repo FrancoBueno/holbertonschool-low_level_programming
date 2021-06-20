@@ -13,7 +13,7 @@ int main(void)
 {
 char start = 'z';
 char aux;
- 
+
 for (aux = 'a'; aux <= start; aux++)
 {
 putchar(aux);
