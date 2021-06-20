@@ -6,7 +6,7 @@
  *
  *main - Entry point
  *
- *This function print the alphabet a until z , A...Z
+ *This function print the alphabet a until z 
  *
  *Return: Always 0 (success)
  */
