@@ -1,25 +1,18 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
 
 /**
- *
  *main - Entry point
- *
- *This function print the alphabet a until z 
  *
  *Return: Always 0 (success)
  */
 int main(void)
 {
-  char start = 'z';
-  char aux;
-
-  for (aux = 'a' ; aux <= start; aux++)
-
+  char lowerCasse;
+  char upperCasse;
+  for (lowerCasse = 'a'; lowerCasse <= 'z'; lowerCasse++)
 {
-  putchar(aux);
-}
-  putchar('\n');
+  putchar(upperCasse);
+ }
+  putchar ('\n');
   return (0);
 }
