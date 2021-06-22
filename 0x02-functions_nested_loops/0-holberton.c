@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
  * main - Program that prints Holberton, followed by a new line.
- * Return Always 0
+ * Return: Always 0 (success)
  */
 int main(void)
 {
