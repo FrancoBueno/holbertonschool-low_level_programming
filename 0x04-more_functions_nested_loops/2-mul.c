@@ -1,5 +1,6 @@
 /**
  *Description - This function is to multiply two numbers
+ *mul -multiply two numbers
  *@a: Integer to multiply
  *@b: integrer to multiply
  *Return: (c * b)
