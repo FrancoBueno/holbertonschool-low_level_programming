@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - Block Main work
+ * main - causes an infinite loop
  * Return: 0
  */
 
