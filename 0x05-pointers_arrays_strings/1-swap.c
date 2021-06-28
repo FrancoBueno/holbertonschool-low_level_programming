@@ -1,16 +1,16 @@
-#include <stdio.h>
 #include "holberton.h"
+#include <stdio.h>
 /**
- *void - Write a function that swaps the values of two integers.
- *Return: 0 (Success)
- *@a: i´m pointer of type int
- *@b: im pointer of type int
- */
-void swap_int(int *a, int *b);
+* swap_int - function that swaps the values of two integers.
+* @a: pinter type int
+* @b: pinter type int
+* Return: Always 0 (Success)
+*/
+void swap_int(int *a, int *b)
 {
-  int intercambio;
-  
-  intercambio = *a;
-  *a = *b
-    *b = intercambio;
+	int change;
+
+	change = *b;
+	*b = *a;
+	*a = change;
 }
