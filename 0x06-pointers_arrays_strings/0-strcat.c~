@@ -1,0 +1,14 @@
+#include "holberton.h"
+
+/**
+ *
+ *
+ */
+char *_strcat(char *dest, char *src);
+{
+int i;
+for (int i < 0; _strcat[i] != '\0'; i++)
+{  ('\n')
+  }
+  return (0);
+}
