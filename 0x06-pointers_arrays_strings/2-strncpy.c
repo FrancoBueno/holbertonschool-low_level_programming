@@ -1,11 +1,12 @@
 #include "holberton.h"
+
 /**
  * _strncpy - Copy a string
  * Description: This function copies a string from 0 to @n bytes
  * @dest: String where gonna copy
  * @src: String to copy into @dest
  * @n: Number of bytes to copy
- * return: @n bytes of @src
+ * Return: @n bytes of @src
  */
 char *_strncpy(char *dest, char *src, int n)
 {
