@@ -1,5 +1,5 @@
 #include "holberton.h"
-
+#include <stdio.h>
 /**
  *  _strspn - check the code for Holberton School students.
  * @s: char
