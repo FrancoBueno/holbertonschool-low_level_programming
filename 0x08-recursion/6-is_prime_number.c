@@ -8,11 +8,11 @@
  */
 int prime(int n, int divisor)
 {
-  if (n / 2 < divisor)
-    return (1);
-  else if (n % divisor == 0)
-    return (0);
-  return (prime(n, divisor + 1));
+if (n / 2 < divisor)
+return (1);
+else if (n % divisor == 0)
+return (0);
+return (prime(n, divisor + 1));
 
 }
 /**
@@ -22,7 +22,7 @@ int prime(int n, int divisor)
  */
 int is_prime_number(int n)
 {
-  if (n <= 1)
-    return (0);
-  return (prime(n, 2));
+if (n <= 1)
+return (0);
+return (prime(n, 2));
 }
