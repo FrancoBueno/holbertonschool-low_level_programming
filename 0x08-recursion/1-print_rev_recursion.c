@@ -3,13 +3,12 @@
 /**
  *_print_rev_recursion - Entry point
  *return: Always 0 (Success)
- *@s:char
+ *@s: string
  */
 void _print_rev_recursion(char *s)
 {
 if (*s == '\0')
-_putchar('\n');
- else
+return;
 _print_rev_recursion(s + 1);
 _putchar(*s);
 }
