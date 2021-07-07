@@ -1,8 +1,8 @@
 #include "holberton.h"
 #include <stdio.h>
 /**
- *
- *
+ *int factorial - Entry Point 
+ *Return: 0 or -1 or value of suma1
  */
 int factorial(int n)
 {
