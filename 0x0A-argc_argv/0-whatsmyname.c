@@ -6,12 +6,13 @@
  * main - print the name of program
  * Description: if rename the program, it will print the name
  * without compiling
- * Return: the name, EXIT
+ *@argc: argument
+ *@argv: arguments main and array of strings
+ * Return: the name, the print
  */
-
 int main(int argc, char *argv[])
 {
 (void) argc;
 printf("%s\n", argv[0]);
-return 0;
+return (0);
 }
