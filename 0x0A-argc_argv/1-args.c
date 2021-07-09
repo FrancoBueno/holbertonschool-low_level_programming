@@ -1,13 +1,14 @@
 #include "holberton.h"
-#include <stdio.h"
-#include <stlib.h>
+#include <stdio.h>
+
 /**
- *
- *
- *
+ *main - Entry point
+ * Description: print a number , followed by a new line  
+ *Return success 0
  */
 int main(int argc, char *argv[])
 {
-  printf("%d,\n", *argv);
-  return 0;
+(void) *argv;
+printf("%d\n", argc -1);
+return 0;
 }
