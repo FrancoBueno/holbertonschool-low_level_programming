@@ -1,16 +1,26 @@
 #include "holberton.h"
 #include <stdio.h>
-#include <stdlib.h>
+
 /**
- * main - Entry point
- * Description : print a number , followed by a new line
- * @argv: array
- * @argc: array
+ * main - main entry
+ *@argc: arguments numbers
+ *@argv: string arguments
  * Return: 0
  */
 int main(int argc, char *argv[])
 {
-(void) *argv;
-printf("%d\n", argc);
-return (argc);
+int i;
+
+(void)argv;
+if (argc > 1)
+{
+for (i = 0; i < argc; i++)
+;
+printf("%d\n", i - 1);
+}
+else
+{
+printf("0\n");
+}
+return (0);
 }
