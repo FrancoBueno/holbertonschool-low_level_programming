@@ -5,7 +5,7 @@
  * string_nconcat - Concatenates two strings
  * @s1: string 1.
  * @s2: string 2.
- * @n: The maximum number of bytes 
+ * @n: The maximum number of bytes
  *
  * Return: NULL fail, else pointer to malloc memory
  */
