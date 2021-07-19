@@ -1,10 +1,10 @@
 #include <stdio.h>
 /**
- *int main (void) - entry point 
- *return: success 0 (always)
+ * main - entry point
+ * Return: Always 0 (Success)
  */
-int main (void)
+int main(void)
 {
-printf("%s\n" , __FILE__);
+printf("%s\n", __FILE__);
 return (0);
 }
