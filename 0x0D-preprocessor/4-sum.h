@@ -1,4 +1,4 @@
-#ifndef SUM
-#define SUM
+#ifndef Holberton_SUM
+#define Holberton_SUM
 #define SUM(x, y) ((x) + (y))
-#endif /* ifndef ABS*/
+#endif /* ifndef Holberton_sum*/
