@@ -1,8 +1,10 @@
 #include <stddef.h>
 #include "function_pointers.h"
 /**
- *
- *
+ * array_iterator - entry point point point poin
+ *@array: el arrai es el arrai
+ *@size: tamaño piola
+ *@action: action peli
  */
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
