@@ -1,13 +1,13 @@
 #include "lists.h"
-#include <stdio.h>
+#include <string.h>
 /**
  *
  */
-unsigned int _stringlength(char *str)
+int _stringlength(char *s)
 {
-	unsigned int i;
+	int i;
 
-	for (i = 0; str[i]; i++);
+	for (i = 0; s[i]; i++);
 
 	return (i);
 }
@@ -22,6 +22,7 @@ unsigned int _stringlength(char *str)
 list_t *add_node(list_t **head, const char *str)
 {
 	list_t *table;
+	
 	if (str == NULL)
 		return (NULL);
 	table = malloc(sizeof(list_t));
@@ -34,5 +35,6 @@ list_t *add_node(list_t **head, const char *str)
 			}
 	table->len = _stringlength(table->str);
 	table->next = *head;
+	*head = table;
 	return (table);
 }
