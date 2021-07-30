@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * print_100: - function called print_100 main
+ * print_100 - function called print_100 main
  * @void: no argument
  */
 void print_100(void)
