@@ -1,5 +1,5 @@
 #include "lists.h"
-#include <stdlib.h>
+
 /**
  * free_listint2 - free list two
  * @head: header
@@ -16,7 +16,7 @@ void free_listint2(listint_t **head)
 	while (*head)
 	{
 		pim = (*head)->next;
-		free(head);
+		free(*head);
 		*head = pim;
 	}
 
