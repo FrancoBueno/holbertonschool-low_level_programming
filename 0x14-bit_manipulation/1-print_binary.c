@@ -3,7 +3,7 @@
 
 /**
  *print_binary - print in binary
- *@n: number 
+ *@n: number
  * Return: Always 0.
  */
 void print_binary(unsigned long int n)
