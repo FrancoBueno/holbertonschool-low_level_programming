@@ -1,7 +1,9 @@
 #include "main.h"
 /**
- *
- *
+ *create_file - create file and text included xD
+ *@filename: name of the file xd
+ *@text_content: text content
+ *Return: 1 if is success , -1 if is fail
  */
 int create_file(const char *filename, char *text_content)
 {
@@ -15,17 +17,21 @@ int create_file(const char *filename, char *text_content)
 		f = open(filename, O_CREAT, 0600);
 		if (f == -1)
 			return (-1);
-
+		return (1);
 	}
-	for (countl = 0; text_content[countl] != '\0'; countl++)
+	for (k = 0; text_content[k] != '\0'; k++)
 		;
-	buffersize = malloc(sizeof(char) * countl);
+	buffersize = malloc(sizeof(char) * k);
 
 	if (buffersize == NULL)
 		return (-1);
 
-	k = write(f, text_content, countl);
-	if (k == 1)
+	f = open(filename, O_CREAT | O_TRUNC | O_WRONLY, 0600);
+	if (f == -1)
+		return (-1);
+
+	countl = write(f, text_content, k);
+	if (countl == 1)
 		return (-1);
 	close(f);
 	free(buffersize);
