@@ -17,8 +17,8 @@ return (NULL);
 newnode->n = n;
 newnode->prev = NULL;
 newnode->next = *head;
+if (*head)
+(*head)->prev = newnode;
 *head = newnode;
-if (head == NULL)
-return (NULL);
 return (newnode);
 }
