@@ -1,0 +1,259 @@
+5-main.c:1:8: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘<’ token
+    1 | nclude <stdlib.h>
+      |        ^
+In file included from 5-main.c:2:
+/usr/include/string.h:44:8: error: unknown type name ‘size_t’
+   44 |        size_t __n) __THROW __nonnull ((1, 2));
+      |        ^~~~~~
+/usr/include/string.h:34:1: note: ‘size_t’ is defined in header ‘<stddef.h>’; did you forget to ‘#include <stddef.h>’?
+   33 | #include <stddef.h>
+  +++ |+#include <stddef.h>
+   34 | 
+/usr/include/string.h:47:56: error: unknown type name ‘size_t’
+   47 | extern void *memmove (void *__dest, const void *__src, size_t __n)
+      |                                                        ^~~~~~
+/usr/include/string.h:47:56: note: ‘size_t’ is defined in header ‘<stddef.h>’; did you forget to ‘#include <stddef.h>’?
+/usr/include/string.h:55:18: error: unknown type name ‘size_t’
+   55 |         int __c, size_t __n)
+      |                  ^~~~~~
+/usr/include/string.h:55:18: note: ‘size_t’ is defined in header ‘<stddef.h>’; did you forget to ‘#include <stddef.h>’?
+/usr/include/string.h:61:42: error: unknown type name ‘size_t’
+   61 | extern void *memset (void *__s, int __c, size_t __n) __THROW __nonnull ((1));
+      |                                          ^~~~~~
+/usr/include/string.h:61:42: note: ‘size_t’ is defined in header ‘<stddef.h>’; did you forget to ‘#include <stddef.h>’?
+/usr/include/string.h:64:56: error: unknown type name ‘size_t’
+   64 | extern int memcmp (const void *__s1, const void *__s2, size_t __n)
+      |                                                        ^~~~~~
+/usr/include/string.h:64:56: note: ‘size_t’ is defined in header ‘<stddef.h>’; did you forget to ‘#include <stddef.h>’?
+/usr/include/string.h:91:48: error: unknown type name ‘size_t’
+   91 | extern void *memchr (const void *__s, int __c, size_t __n)
+      |                                                ^~~~~~
+/usr/include/string.h:91:48: note: ‘size_t’ is defined in header ‘<stddef.h>’; did you forget to ‘#include <stddef.h>’?
+/usr/include/string.h:126:39: error: unknown type name ‘size_t’
+  126 |         const char *__restrict __src, size_t __n)
+      |                                       ^~~~~~
+/usr/include/string.h:126:39: note: ‘size_t’ is defined in header ‘<stddef.h>’; did you forget to ‘#include <stddef.h>’?
+/usr/include/string.h:134:9: error: unknown type name ‘size_t’
+  134 |         size_t __n) __THROW __nonnull ((1, 2));
+      |         ^~~~~~
+/usr/include/string.h:134:9: note: ‘size_t’ is defined in header ‘<stddef.h>’; did you forget to ‘#include <stddef.h>’?
+/usr/include/string.h:140:57: error: unknown type name ‘size_t’
+  140 | extern int strncmp (const char *__s1, const char *__s2, size_t __n)
+      |                                                         ^~~~~~
+/usr/include/string.h:140:57: note: ‘size_t’ is defined in header ‘<stddef.h>’; did you forget to ‘#include <stddef.h>’?
+/usr/include/string.h:147:8: error: unknown type name ‘size_t’
+  147 | extern size_t strxfrm (char *__restrict __dest,
+      |        ^~~~~~
+/usr/include/string.h:148:40: error: unknown type name ‘size_t’
+  148 |          const char *__restrict __src, size_t __n)
+      |                                        ^~~~~~
+/usr/include/string.h:148:40: note: ‘size_t’ is defined in header ‘<stddef.h>’; did you forget to ‘#include <stddef.h>’?
+In file included from 5-main.c:2:
+/usr/include/string.h:160:8: error: unknown type name ‘size_t’
+  160 | extern size_t strxfrm_l (char *__dest, const char *__src, size_t __n,
+      |        ^~~~~~
+/usr/include/string.h:160:59: error: unknown type name ‘size_t’
+  160 | extern size_t strxfrm_l (char *__dest, const char *__src, size_t __n,
+      |                                                           ^~~~~~
+/usr/include/string.h:160:59: note: ‘size_t’ is defined in header ‘<stddef.h>’; did you forget to ‘#include <stddef.h>’?
+/usr/include/string.h:175:45: error: unknown type name ‘size_t’
+  175 | extern char *strndup (const char *__string, size_t __n)
+      |                                             ^~~~~~
+/usr/include/string.h:175:45: note: ‘size_t’ is defined in header ‘<stddef.h>’; did you forget to ‘#include <stddef.h>’?
+/usr/include/string.h:273:8: error: unknown type name ‘size_t’
+  273 | extern size_t strcspn (const char *__s, const char *__reject)
+      |        ^~~~~~
+/usr/include/string.h:277:8: error: unknown type name ‘size_t’
+  277 | extern size_t strspn (const char *__s, const char *__accept)
+      |        ^~~~~~
+/usr/include/string.h:385:8: error: unknown type name ‘size_t’
+  385 | extern size_t strlen (const char *__s)
+      |        ^~~~~~
+/usr/include/string.h:391:8: error: unknown type name ‘size_t’
+  391 | extern size_t strnlen (const char *__string, size_t __maxlen)
+      |        ^~~~~~
+/usr/include/string.h:391:46: error: unknown type name ‘size_t’
+  391 | extern size_t strnlen (const char *__string, size_t __maxlen)
+      |                                              ^~~~~~
+/usr/include/string.h:391:46: note: ‘size_t’ is defined in header ‘<stddef.h>’; did you forget to ‘#include <stddef.h>’?
+In file included from /usr/include/features.h:461,
+                 from /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:33,
+                 from /usr/include/string.h:26,
+                 from 5-main.c:2:
+/usr/include/string.h:410:12: error: unknown type name ‘size_t’
+  410 | extern int __REDIRECT_NTH (strerror_r,
+      |            ^~~~~~~~~~~~~~
+/usr/include/string.h:410:12: note: ‘size_t’ is defined in header ‘<stddef.h>’; did you forget to ‘#include <stddef.h>’?
+In file included from /usr/include/string.h:432,
+                 from 5-main.c:2:
+/usr/include/strings.h:34:54: error: unknown type name ‘size_t’
+   34 | extern int bcmp (const void *__s1, const void *__s2, size_t __n)
+      |                                                      ^~~~~~
+/usr/include/strings.h:24:1: note: ‘size_t’ is defined in header ‘<stddef.h>’; did you forget to ‘#include <stddef.h>’?
+   23 | #include <stddef.h>
+  +++ |+#include <stddef.h>
+   24 | 
+/usr/include/strings.h:38:53: error: unknown type name ‘size_t’
+   38 | extern void bcopy (const void *__src, void *__dest, size_t __n)
+      |                                                     ^~~~~~
+/usr/include/strings.h:38:53: note: ‘size_t’ is defined in header ‘<stddef.h>’; did you forget to ‘#include <stddef.h>’?
+/usr/include/strings.h:42:31: error: unknown type name ‘size_t’
+   42 | extern void bzero (void *__s, size_t __n) __THROW __nonnull ((1));
+      |                               ^~~~~~
+/usr/include/strings.h:42:31: note: ‘size_t’ is defined in header ‘<stddef.h>’; did you forget to ‘#include <stddef.h>’?
+/usr/include/strings.h:120:61: error: unknown type name ‘size_t’
+  120 | extern int strncasecmp (const char *__s1, const char *__s2, size_t __n)
+      |                                                             ^~~~~~
+/usr/include/strings.h:120:61: note: ‘size_t’ is defined in header ‘<stddef.h>’; did you forget to ‘#include <stddef.h>’?
+/usr/include/strings.h:134:6: error: unknown type name ‘size_t’
+  134 |      size_t __n, locale_t __loc)
+      |      ^~~~~~
+/usr/include/strings.h:134:6: note: ‘size_t’ is defined in header ‘<stddef.h>’; did you forget to ‘#include <stddef.h>’?
+In file included from 5-main.c:2:
+/usr/include/string.h:436:40: error: unknown type name ‘size_t’
+  436 | extern void explicit_bzero (void *__s, size_t __n) __THROW __nonnull ((1));
+      |                                        ^~~~~~
+/usr/include/string.h:436:40: note: ‘size_t’ is defined in header ‘<stddef.h>’; did you forget to ‘#include <stddef.h>’?
+/usr/include/string.h:458:34: error: unknown type name ‘size_t’
+  458 |    const char *__restrict __src, size_t __n)
+      |                                  ^~~~~~
+/usr/include/string.h:458:34: note: ‘size_t’ is defined in header ‘<stddef.h>’; did you forget to ‘#include <stddef.h>’?
+/usr/include/string.h:461:39: error: unknown type name ‘size_t’
+  461 |         const char *__restrict __src, size_t __n)
+      |                                       ^~~~~~
+/usr/include/string.h:461:39: note: ‘size_t’ is defined in header ‘<stddef.h>’; did you forget to ‘#include <stddef.h>’?
+In file included from /usr/include/stdio.h:43,
+                 from 5-main.c:3:
+/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:95:3: error: unknown type name ‘size_t’
+   95 |   size_t __pad5;
+      |   ^~~~~~
+/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:98:67: error: ‘size_t’ undeclared here (not in a function)
+   98 |   char _unused2[15 * sizeof (int) - 4 * sizeof (void *) - sizeof (size_t)];
+      |                                                                   ^~~~~~
+/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:1:1: note: ‘size_t’ is defined in header ‘<stddef.h>’; did you forget to ‘#include <stddef.h>’?
+  +++ |+#include <stddef.h>
+    1 | /* Copyright (C) 1991-2020 Free Software Foundation, Inc.
+In file included from 5-main.c:3:
+/usr/include/stdio.h:292:35: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  292 | extern FILE *fmemopen (void *__s, size_t __len, const char *__modes)
+      |                                   ^~~~~~
+/usr/include/stdio.h:298:47: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  298 | extern FILE *open_memstream (char **__bufloc, size_t *__sizeloc) __THROW __wur;
+      |                                               ^~~~~~
+/usr/include/stdio.h:309:20: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  309 |       int __modes, size_t __n) __THROW;
+      |                    ^~~~~~
+/usr/include/stdio.h:315:10: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  315 |          size_t __size) __THROW;
+      |          ^~~~~~
+/usr/include/stdio.h:354:44: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  354 | extern int snprintf (char *__restrict __s, size_t __maxlen,
+      |                                            ^~~~~~
+/usr/include/stdio.h:358:45: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  358 | extern int vsnprintf (char *__restrict __s, size_t __maxlen,
+      |                                             ^~~~~~
+/usr/include/stdio.h:604:30: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  604 |                              size_t *__restrict __n, int __delimiter,
+      |                              ^~~~~~
+/usr/include/stdio.h:607:28: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  607 |                            size_t *__restrict __n, int __delimiter,
+      |                            ^~~~~~
+/usr/include/stdio.h:617:27: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  617 |                           size_t *__restrict __n,
+      |                           ^~~~~~
+/usr/include/stdio.h:646:15: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘fread’
+  646 | extern size_t fread (void *__restrict __ptr, size_t __size,
+      |               ^~~~~
+/usr/include/stdio.h:652:15: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘fwrite’
+  652 | extern size_t fwrite (const void *__restrict __ptr, size_t __size,
+      |               ^~~~~~
+/usr/include/stdio.h:673:15: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘fread_unlocked’
+  673 | extern size_t fread_unlocked (void *__restrict __ptr, size_t __size,
+      |               ^~~~~~~~~~~~~~
+/usr/include/stdio.h:675:15: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘fwrite_unlocked’
+  675 | extern size_t fwrite_unlocked (const void *__restrict __ptr, size_t __size,
+      |               ^~~~~~~~~~~~~~~
+In file included from hash_tables.h:3,
+                 from 5-main.c:4:
+/usr/include/stdlib.h:97:15: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘__ctype_get_mb_cur_max’
+   97 | extern size_t __ctype_get_mb_cur_max (void) __THROW __wur;
+      |               ^~~~~~~~~~~~~~~~~~~~~~
+In file included from hash_tables.h:3,
+                 from 5-main.c:4:
+/usr/include/stdlib.h:411:4: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  411 |    size_t __statelen) __THROW __nonnull ((2));
+      |    ^~~~~~
+/usr/include/stdlib.h:441:4: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  441 |    size_t __statelen,
+      |    ^~~~~~
+/usr/include/stdlib.h:539:22: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  539 | extern void *malloc (size_t __size) __THROW __attribute_malloc__
+      |                      ^~~~~~
+/usr/include/stdlib.h:542:22: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  542 | extern void *calloc (size_t __nmemb, size_t __size)
+      |                      ^~~~~~
+/usr/include/stdlib.h:542:38: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  542 | extern void *calloc (size_t __nmemb, size_t __size)
+      |                                      ^~~~~~
+/usr/include/stdlib.h:550:36: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  550 | extern void *realloc (void *__ptr, size_t __size)
+      |                                    ^~~~~~
+/usr/include/stdlib.h:559:41: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  559 | extern void *reallocarray (void *__ptr, size_t __nmemb, size_t __size)
+      |                                         ^~~~~~
+/usr/include/stdlib.h:559:57: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  559 | extern void *reallocarray (void *__ptr, size_t __nmemb, size_t __size)
+      |                                                         ^~~~~~
+In file included from /usr/include/stdlib.h:568,
+                 from hash_tables.h:3,
+                 from 5-main.c:4:
+/usr/include/alloca.h:32:22: error: expected declaration specifiers or ‘...’ before ‘size_t’
+   32 | extern void *alloca (size_t __size) __THROW;
+      |                      ^~~~~~
+In file included from hash_tables.h:3,
+                 from 5-main.c:4:
+/usr/include/stdlib.h:574:22: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  574 | extern void *valloc (size_t __size) __THROW __attribute_malloc__
+      |                      ^~~~~~
+/usr/include/stdlib.h:580:45: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  580 | extern int posix_memalign (void **__memptr, size_t __alignment, size_t __size)
+      |                                             ^~~~~~
+/usr/include/stdlib.h:580:65: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  580 | extern int posix_memalign (void **__memptr, size_t __alignment, size_t __size)
+      |                                                                 ^~~~~~
+/usr/include/stdlib.h:821:9: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  821 |         size_t __nmemb, size_t __size, __compar_fn_t __compar)
+      |         ^~~~~~
+/usr/include/stdlib.h:821:25: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  821 |         size_t __nmemb, size_t __size, __compar_fn_t __compar)
+      |                         ^~~~~~
+/usr/include/stdlib.h:830:34: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  830 | extern void qsort (void *__base, size_t __nmemb, size_t __size,
+      |                                  ^~~~~~
+/usr/include/stdlib.h:830:50: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  830 | extern void qsort (void *__base, size_t __nmemb, size_t __size,
+      |                                                  ^~~~~~
+/usr/include/stdlib.h:904:6: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  904 |      size_t __len) __THROW __nonnull ((3, 4, 5));
+      |      ^~~~~~
+/usr/include/stdlib.h:907:6: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  907 |      size_t __len) __THROW __nonnull ((3, 4, 5));
+      |      ^~~~~~
+/usr/include/stdlib.h:911:31: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  911 |       char *__restrict __buf, size_t __len)
+      |                               ^~~~~~
+/usr/include/stdlib.h:915:31: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  915 |       char *__restrict __buf, size_t __len)
+      |                               ^~~~~~
+/usr/include/stdlib.h:922:36: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  922 | extern int mblen (const char *__s, size_t __n) __THROW;
+      |                                    ^~~~~~
+/usr/include/stdlib.h:926:34: error: expected declaration specifiers or ‘...’ before ‘size_t’
+  926 |      const char *__restrict __s, size_t __n) __THROW;
+      |                                  ^~~~~~
+/usr/include/stdlib.h:933:15: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘mbstowcs’
+  933 | extern size_t mbstowcs (wchar_t *__restrict  __pwcs,
+      |               ^~~~~~~~
+/usr/include/stdlib.h:936:15: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘wcstombs’
+  936 | extern size_t wcstombs (char *__restrict __s,
+      |               ^~~~~~~~
