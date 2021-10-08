@@ -21,15 +21,15 @@ void hash_table_print(const hash_table_t *ht)
 		node = ht->array[i];
 		
 		while (node)
-			{
-				if (coma == 1)
-					printf(", ");
+		{
+			if (coma == 1)
+				printf(", ");
 
-				printf("'%s' : '%s'", node->key, node->value);
-				coma = 1;
-				node = node->next;
-			}
-			i++;
+			printf("'%s' : '%s'", node->key, node->value);
+			coma = 1;
+			node = node->next;
+		}
+		i++;
 		
 	}
 	printf("}\n");
