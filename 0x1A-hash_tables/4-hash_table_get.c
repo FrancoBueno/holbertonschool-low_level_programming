@@ -1,7 +1,10 @@
 #include "hash_tables.h"
 
 /**
- *
+ *hash_table_get - Fucntion thaht print value and key
+ *@ht: hash thable
+ *@key: NameNAme
+ *Return: success Print
  */
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
