@@ -1,8 +1,10 @@
 #include "hash_tables.h"
 
 /**
- * 
- *
+ *hash_new_node - Function that make new node
+ *@key: keyy
+ *@value: valueid
+ *Return: New node
  */
 
 hash_node_t *hash_new_node(const char *key, const char *value)
@@ -11,7 +13,7 @@ hash_node_t *hash_new_node(const char *key, const char *value)
 
 	node = malloc(sizeof(hash_node_t));
 	if (!node)
-		return(NULL);
+		return (NULL);
 	node->key = strdup(key);
 	if (node->key == NULL)
 	{
@@ -23,14 +25,17 @@ hash_node_t *hash_new_node(const char *key, const char *value)
 	{
 		free(node->key);
 		free(node);
-		return(NULL);
+		return (NULL);
 	}
 	node->next = NULL;
 	return (node);
 }
 /**
- *
- *
+ *hash_table_set - Function that add elemnts to the hash table
+ *@ht: table
+ *@key: key
+ *@value: valor
+ *Return: Success
  */
 
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
@@ -45,7 +50,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	tmp = ht->array[index];
 	while (tmp != NULL)
 	{
-		if(strcmp(tmp->key, key) == 0)
+		if (strcmp(tmp->key, key) == 0)
 		{
 			valuenew = strdup(value);
 			if (valuenew == NULL)
@@ -56,10 +61,11 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		}
 		tmp = tmp->next;
 	}
-	hash_node= hash_new_node(key, value);
+	hash_node = hash_new_node(key, value);
 	if (hash_node == NULL)
 		return (0);
-	hash_node->next = ht->array[index];
-	ht->array[index] = hash_node;
-	return (1);
+	else:
+		hash_node->next = ht->array[index];
+		ht->array[index] = hash_node;
+		return (1);
 }
