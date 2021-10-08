@@ -16,10 +16,10 @@ void hash_table_print(const hash_table_t *ht)
 		return;
 
 	printf("{");
-	while(i < ht->size)
+	while (i < ht->size)
 	{
 		node = ht->array[i];
-		
+
 		while (node)
 		{
 			if (coma == 1)
@@ -30,7 +30,7 @@ void hash_table_print(const hash_table_t *ht)
 			node = node->next;
 		}
 		i++;
-		
+
 	}
 	printf("}\n");
 }
