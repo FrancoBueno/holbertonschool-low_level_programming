@@ -1,7 +1,9 @@
 #include "hash_tables.h"
 
 /**
- *
+ *hash_table_delete - Function that Remove emptea the list
+ *@ht: hashTable
+ *Return: Success amd Clean the tabled
  */
 void hash_table_delete(hash_table_t *ht)
 {
