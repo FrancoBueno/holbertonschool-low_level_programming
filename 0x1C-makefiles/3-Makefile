@@ -10,7 +10,7 @@ clean:
 oclean:
 	$(RM) $(OBJ)
 fclean:
-	$(RM) $(NAME) $(wildcard *~) $(NAME)
+	$(RM) $(NAME) $(wildcard *~) $(OBJ) 
 re: 
 	 $(RM) $(OBJ)
 	 $(CC) $(OBJ) -o $(NAME)
