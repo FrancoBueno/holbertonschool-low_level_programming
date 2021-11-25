@@ -5,7 +5,7 @@ OBJ = $(SRC:.c=.o)
 CFLAGS = -Wall -Werror -Wextra -pedantic
 NAME = school
 all: m.h $(OBJ)
-	$(CC) $(SRC) -o $(NAME)
+	$(CC) $(SRC) m.h -o $(NAME)
 clean:
 	$(RM) $(wildcard *~) $(NAME)
 oclean:
