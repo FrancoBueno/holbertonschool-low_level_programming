@@ -7,10 +7,12 @@ NAME = school
 all:$(OBJ)
 	
 clean:
-	$(RM) -f *~ $(NAME)
+	$(RM) $(wildcard *~) $(NAME)
 oclean:
-	$(RM) -f $(OBJ)
+	$(RM) $(OBJ)
 fclean:
-	clean oclean 
+	clean 
+	oclean 
 re: 
-	oclean all
+	oclean 
+	all
