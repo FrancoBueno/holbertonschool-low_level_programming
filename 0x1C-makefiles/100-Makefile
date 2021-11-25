@@ -7,7 +7,7 @@ NAME = school
 all: m.h $(OBJ)
 	$(CC) $(SRC) m.h -o $(NAME)
 clean:
-	$(RM) $(wildcard *~) $(NAME)
+	$(RM) *~ $(NAME)
 oclean:
 	$(RM) $(OBJ)
 fclean:
