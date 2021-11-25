@@ -14,6 +14,3 @@ fclean:
 re: 
 	 $(RM) -f $(OBJ)
 	 $(CC) $(SRC) -o $(NAME)
-make:
-	$(CC) $(CFLAGS) -c -o $(OBJ) $(SRC)
-
