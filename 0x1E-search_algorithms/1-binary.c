@@ -1,14 +1,18 @@
 #include "search_algos.h"
 
 /**
- *
+ * binary_search - searching the value in the array with the binary_search
+ * @array: array of numbers
+ * @size: size of array
+ * @value: number to search
+ * Return: return number and idx
  */
 int binary_search(int *array, size_t size, int value)
 {
 	int z;
 	int i = 0;
-        int right = size - 1;
-       	int mid = (i + right) / 2;
+	int right = size - 1;
+	int mid = (i + right) / 2;
 
 	if (array == NULL)
 		return (-1);
