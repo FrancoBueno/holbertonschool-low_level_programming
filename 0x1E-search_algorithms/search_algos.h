@@ -3,7 +3,11 @@
 #include <stdio.h>
 
 /**
- * Header of the excercise
+ * linear_search - search in linear search
+ *@array: array of numbers
+ *@size: size of array
+ *@value: value to search
+ *Return: return index of the value
  */
 
 /*Prototype*/
